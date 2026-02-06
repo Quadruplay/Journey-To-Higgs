@@ -11,6 +11,7 @@ for (let selector of selectors) {
                 let padding = document.createElement("div");
                 padding.id = "padding";
                 content.append(padding);
+                window.scrollTo(0, 0);
             });
     });
 }
