@@ -36,4 +36,4 @@ Stuff we suspect:
 - Light is waves or particles, but probably particles
 
 Stuff we have:
-- galvanic cells
+- galvanic/voltaic cells
