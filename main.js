@@ -3,8 +3,10 @@ const md = markdownit({html:true}).use(texmath, { engine: katex, delimiters: 'do
 let selectors = sidebar.getElementsByTagName("a");
 for (let selector of selectors) {
     selector.addEventListener("click", (event) => {
-        event.preventDefault();
-        fetch(selector.getAttribute("href"))
+        let destination = selector.getAttribute("href");
+        if (destination.endsWith(".md")) {
+            event.preventDefault();
+            fetch(destination)
             .then(response => response.text())
             .then(text => {
                 content.innerHTML = md.render(text);
@@ -13,5 +15,6 @@ for (let selector of selectors) {
                 content.append(padding);
                 window.scrollTo(0, 0);
             });
+        }
     });
 }

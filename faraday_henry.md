@@ -1,3 +1,7 @@
+# Faraday
+
+# Maxwell
+
 1833 faradays law of electrochemical equivalents - will estimate 1e with it
 1839 photovoltaic effect
 

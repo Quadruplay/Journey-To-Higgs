@@ -46,6 +46,18 @@
             transform: translateX(calc(30vw - 50%));
             max-width: 60vw;
         }
+        #bottom {
+            position: fixed;
+            top: calc(100% - 0.5rem);
+            transform: translateY(-100%);
+            display: flex;
+            width: 100%;
+            display: flex;
+        }
+        #bottom a {
+            text-wrap: nowrap;
+            flex-basis: calc(20vw / 3);
+        }
     </style>
 </head>
 <body>
@@ -68,12 +80,11 @@
                 </ol>
             </li>
         </ul>
-        The one where we discover the Lebesgue measure of a ball in ℝ<sup>n</sup> starting from addition and natural numbers:
-        <ul>
-            <li>
-                Coming at some point
-            </li>
-        </ul>
+        <div id="bottom">
+            <a href="https://quadruplay.github.io/Hub/">My other stuff</a>
+            <a href="https://discord.gg/QThEUDHe5M">Join the discord</a>
+            <a href="https://ko-fi.com/quadruplay">Buy me a coffee</a>
+        </div>
     </div>
     <div id="content">
 
